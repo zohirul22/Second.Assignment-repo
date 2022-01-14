@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.section2{
+    margin: 40px 0;
+}
+.section-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.first-demo{
+    width: 500px;
+   
+}
+
+.first-demo>h1{
+    font-size: 50px;
+    margin-bottom: 20px ;
+}
+
+.first-demo>p{
+    font-size: 25px;
+    margin-bottom: 20px ;
+}
+
+.first{
+    margin-left: 200px;
+}
+
+.link{
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color:rgb(226, 69, 41) ;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    }
+
+    .link>span{
+        margin-left: 10px;
+    }
+
+/*****************Blogs Start***********************/
+.blog-head{
+    font-size: 40px;
+    text-align: center;
+    margin: 25px 0;
+
+}
+.blog-details>h4{
+    color: rgb(31, 27, 27);
+   font-size: 25px;
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.blog-img{
+
+text-align: center;
+
+}
+.blog{
+    padding: 10px;
+    box-shadow:10px 10px 40px gray ;
+    border-radius: 5px;
+    background-color: azure;
+   
+}
+
+.blog-title{
+    margin: 10px 0;
+    font-size: 35px;
+}
+
+.blog-dolar{
+    margin-bottom:10px ;
+}
+
+.blog-icon>i{
+    font-size: 20px;
+    color:#f3db06 ;
+    margin-bottom: 5px;
+}
+
+.blog-icon>span{
+
+font-size: 22px;
+margin-left: 10px;
+
+}
+
+.blog-footer{
+   color: rgba(0, 0, 0, 0.548);
+}
+
+.container{
+    width: 1200px;
+  
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*****************Blogs End***********************/
+
+
+
+
+/*****************Footer Start*********************/
+.foot{
+    background-color: rgb(10, 10, 54);
+  padding: 20px 0;
+ text-align: center;
+ }
+ 
+ .foot>h1{
+     font-size: 40px;
+     color: white;
+ 
+ }
+ 
+ .foot>h3,h4{
+ color: azure;
+ margin-bottom: 10px;
+ 
+ }
+ 
+ .foot>.icon{
+     font-size: 20px;
+     color: blanchedalmond;
+     
+ }
+ 
+ .foot>.icon>i{
+ border: 10px solid rgb(31, 19, 19);
+ border-radius: 100%;
+ 
+ }
+/*****************Blogs End***********************/
+
+.shop-container{
+   
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.shopping{
+display: flex;
+ border-top: 1px dotted  rgb(233, 229, 222);
+ border-bottom: 1px solid rgb(233, 229, 222);
+border-radius: 5%;
+ border-top-style: double;
+ border-bottom-style: double;
+ width: 1200px;
+ padding: 20px 0;
+
+}
+
+.shop{
+    padding: 0 40px;
+}
