@@ -2,21 +2,39 @@
     margin: 0;
     padding: 0;
 }
+/*****************Menu Css Start*******************/
+.menu{
+    display: flex;
+    background-color: rgb(187, 166, 202);
+    justify-content: flex-end;
+}
+
+.menu>a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 25px;
+   color: white;
+}
+
+.menu>a:hover{
+ background-color: rgb(164, 69, 231);
+}
+/*****************Nav Css End*******************/
 
 
+/****************Header css start****************/
 .section2{
     margin: 40px 0;
 }
+
 .section-details{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .first-demo{
     width: 500px;
-   
 }
 
 .first-demo>h1{
@@ -30,9 +48,17 @@
 }
 
 .first{
-    margin-left: 200px;
+ margin-left: 100px;
+
 }
 
+.first:hover{
+    transform: scale(1.2);
+    transition: ease-in-out .5s;
+}
+/****************Header css End****************/
+
+/*link css start*/
 .link{
     text-decoration: none;
     text-align: center;
@@ -45,22 +71,85 @@
     padding: 12px 25px;
     border-radius: 20px;
     font-size: 20px;
+    position: relative;
+    z-index: 1;
     }
 
-    .link>span{
+ .link::before{
+        content: '';
+        height: 100%;
+        width: 0;
+        position: absolute;
+        top:0 ;
+        left: 0;
+        border-radius: 20px;
+        background-color: rgb(0, 72, 130);
+        transition: .5s;
+        z-index: -1;
+    }
+
+.link:hover::before{
+    width: 100%;
+}
+
+ .link>span{
         margin-left: 10px;
     }
+ /********************link css End************************/ 
+ 
+ 
 
-/*****************Blogs Start***********************/
+/*************Shoping css start****************/
+.shop-container{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 60px;
+ }
+ 
+ .shopping{
+ display: flex;
+  border-top: 1px dotted  rgb(233, 229, 222);
+  border-bottom: 1px solid rgb(233, 229, 222);
+ border-radius: 5%;
+  border-top-style: double;
+  border-bottom-style: double;
+  width: 1200px;
+  padding: 20px 0;
+ 
+ }
+ 
+ .shop{
+     padding: 0 40px;
+ }
+ 
+ /*************Shoping css End****************/
+
+
+
+/*****************Blogs Css Start********************/
+
 .blog-head{
     font-size: 40px;
     text-align: center;
     margin: 25px 0;
-
 }
-.blog-details>h4{
-    color: rgb(31, 27, 27);
-   font-size: 25px;
+
+.blog-head>span{
+    color: tomato;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.container{
+    width: 1200px;
+  
 }
 
 .blogs{
@@ -71,16 +160,19 @@
 }
 
 .blog-img{
+    text-align: center;
+    }
 
-text-align: center;
-
+.blog-details>h4{
+    color: rgb(31, 27, 27);
+   font-size: 25px;
 }
+
 .blog{
     padding: 10px;
     box-shadow:10px 10px 40px gray ;
     border-radius: 5px;
     background-color: azure;
-   
 }
 
 .blog-title{
@@ -109,24 +201,50 @@ margin-left: 10px;
    color: rgba(0, 0, 0, 0.548);
 }
 
-.container{
-    width: 1200px;
-  
+/*****************Blogs Css End***********************/
+
+
+
+/*****************Brand Css Start***********************/
+.tumbel-header{
+    font-size: 40px;
+   text-align: center;
+   margin-top: 60px;
+   margin-bottom: 30px;
 }
 
-article{
+.tumbel-header>span{
+    color: tomato;
+}
+
+.thumbel-box{
     display: flex;
+    margin: 30px 0;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
-/*****************Blogs End***********************/
+.thumbel-details{
+    margin-left: 100px;
+}
+
+.thumbel-details>h1{
+font-size: 35px;
+margin: 5px 0;
+}
+
+.thumbel-details>p{
+margin-bottom: 40px;
+font-size: 20px;
+}
+
+/*****************Brand css End***********************/
 
 
 
 
-/*****************Footer Start*********************/
+
+/*****************Footer Css Start*********************/
 .foot{
     background-color: rgb(10, 10, 54);
   padding: 20px 0;
@@ -142,42 +260,121 @@ article{
  .foot>h3,h4{
  color: azure;
  margin-bottom: 10px;
- 
  }
  
  .foot>.icon{
      font-size: 20px;
-     color: blanchedalmond;
-     
+     color: blanchedalmond; 
  }
  
  .foot>.icon>i{
  border: 10px solid rgb(31, 19, 19);
  border-radius: 100%;
- 
  }
-/*****************Blogs End***********************/
 
-.shop-container{
-   
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
+/*****************Footer Css End*********************/
+
+/**** ALL  Media query breakpoints****/
+
+
+/**************Menu Media Start**************/
+@media only screen and (max-width: 768px){
+
+.menu{
+    flex-direction: column;
+    padding: 0 10px;
 }
 
-.shopping{
-display: flex;
- border-top: 1px dotted  rgb(233, 229, 222);
- border-bottom: 1px solid rgb(233, 229, 222);
-border-radius: 5%;
- border-top-style: double;
- border-bottom-style: double;
- width: 1200px;
- padding: 20px 0;
+.menu>a{
+   background-color: steelblue;
+    margin: 10px 0;
+    text-align: center;
+  border-radius: 10px;
+}
 
 }
+
+/**************Menu Media End**************/
+
+
+/***************Section Media Start***************/
+@media only screen and (max-width: 768px){
+
+    .section-details{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .first-demo{
+        margin-bottom: 50px;
+    }
+
+    .first{
+       margin-left: 0; 
+      
+       border-radius: 50%;
+    }
+
+}
+/***************Section Media End***************/
+
+
+/************Shopping media Start***************/
+@media only screen and (max-width: 768px){
+
+    .shopping{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: 100px 80px;
+    }
 
 .shop{
-    padding: 0 40px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+
 }
+/************Shopping media End***************/
+
+
+
+/*************Blogs media Start***************/
+@media only screen and (max-width: 768px){
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+     
+         .container{
+             width: 100vh;
+             padding: 20px;
+         }
+
+  }
+/*************Blogs media End***************/
+
+
+
+
+  /**************Brand Media Start***************/
+  @media only screen and (max-width: 768px){
+    .thumbel-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .thumbel-img{
+        margin-bottom: 30px;
+    }
+
+}
+
+ /**************Brand Media End***************/
+
+
+
