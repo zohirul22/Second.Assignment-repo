@@ -75,22 +75,7 @@
     z-index: 1;
     }
 
- .link::before{
-        content: '';
-        height: 100%;
-        width: 0;
-        position: absolute;
-        top:0 ;
-        left: 0;
-        border-radius: 20px;
-        background-color: rgb(0, 72, 130);
-        transition: .5s;
-        z-index: -1;
-    }
 
-.link:hover::before{
-    width: 100%;
-}
 
  .link>span{
         margin-left: 10px;
